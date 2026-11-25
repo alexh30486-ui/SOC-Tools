@@ -1,0 +1,104 @@
+{
+  "experiment": "Short low-rank adaptation diagnostic",
+  "local_only": true,
+  "verdict": "NO-GO",
+  "failed": [
+    "final_not_worse_than_mid_on_rich",
+    "minieval_resolved_not_worse_than_base_minus_1"
+  ],
+  "criteria": {
+    "rich_action_nll_improves_5pct": {
+      "value": -0.4072735223323699,
+      "threshold": -0.05,
+      "pass": true
+    },
+    "rich_thought_nll_not_worse": {
+      "value": -0.25529589962057203,
+      "threshold": 0.01,
+      "pass": true
+    },
+    "devval_nll_improves": {
+      "value": -0.09831925704032485,
+      "threshold": 0.0,
+      "pass": true
+    },
+    "final_not_worse_than_mid_on_rich": {
+      "final": 0.07342439294727521,
+      "mid": 0.0677905884530841,
+      "pass": false
+    },
+    "resolved_improves_more_than_unresolved": {
+      "resolved": -0.2713270865365935,
+      "unresolved": -0.25517163603181686,
+      "pass": true
+    },
+    "no_overfitting_signal": {
+      "pass": true,
+      "train_loss_relative_change": -0.12421577583980357,
+      "devval_overall_relative_change": -0.09831925704032485,
+      "rich_resolved_overall_relative_change": -0.2713270865365935,
+      "coder_resolved_overall_relative_change": -0.2643669112507649,
+      "overfitting_signal": false
+    },
+    "tool_validity_at_least_baseline": {
+      "adapter_unknown_tools": 0,
+      "adapter_unparsed_rate": 0.0,
+      "base_unparsed": 0,
+      "adapter_bad_json_args": 0,
+      "pass": true
+    },
+    "minieval_resolved_not_worse_than_base_minus_1": {
+      "base": 4,
+      "adapter": 2,
+      "runs": 32,
+      "pass": false
+    },
+    "completion_tokens_per_turn_within_10pct": {
+      "ratio": 1.036724773081159,
+      "pass": true
+    },
+    "agent_wall_time_within_10pct": {
+      "ratio": 1.0174783131377956,
+      "pass": true
+    }
+  },
+  "training": {
+    "first_4_steps_mean_loss": 0.1389334040543675,
+    "last_4_steps_mean_loss": 0.12167568347968932,
+    "steps": 30,
+    "examples_seen": 240,
+    "elapsed_seconds": 3891.4452962875366,
+    "stopped_by_time_budget": false
+  },
+  "protocol": {
+    "training_turns": 412,
+    "development_tasks": 23,
+    "rank": 16,
+    "alpha": 32,
+    "learning_rate": 0.0001,
+    "gradient_accumulation": 8,
+    "seed": 42,
+    "max_length": 8192,
+    "checkpoint_steps": [
+      12,
+      24,
+      30
+    ],
+    "mini_evaluation_tasks": 16,
+    "mini_evaluation_seeds": [
+      42,
+      7
+    ],
+    "mini_evaluation_runs_per_route": 32,
+    "task_minutes": 2,
+    "concurrency": 8,
+    "serving": "one A100 TP1 LoRA server",
+    "nll_metric": "token-mean negative log-likelihood, natural logarithm",
+    "held_out_repository": "Textualize/rich"
+  },
+  "limitations": [
+    "Debug adapter was never a submission candidate; no weights or training data released.",
+    "Rich is the sole held-out repository and is now a repeatedly inspected diagnostic holdout, not an untouched final test.",
+    "Mini evaluation is a regression guard, too small for a precise small-gain estimate."
+  ]
+}

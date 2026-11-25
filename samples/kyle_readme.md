@@ -1,0 +1,3 @@
+# Kyle synthetic SOC validation dataset
+The analyst label `kyle.test`, devices, and IPs are fictional. The IP ranges 192.0.2.0/24, 198.51.100.0/24, and 203.0.113.0/24 are reserved for documentation. The dataset is not a real incident or real user log.
+Expected findings: cross-account failed login pattern, login after the failed-login cluster, suspicious PowerShell with encoded and download/execution indicators, large outbound PowerShell transfer, and repeated backend HTTP 5xx failures. Benign events must not produce security alerts. Timestamps are fixed so detection does not depend on the wall clock.

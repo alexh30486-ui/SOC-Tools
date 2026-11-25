@@ -1,0 +1,34 @@
+{
+  "release": "SOC-Tools / Spectacle SOC v12 \u2014 GitHub publishing preparation",
+  "prepared_on": "2026-11-24",
+  "github_remote": "https://github.com/alexh30486-ui/SOC-Tools.git",
+  "publication_status": "not pushed to GitHub by assistant; authentication required",
+  "tests_run_current_turn": {
+    "api_unittest": {
+      "passed": 23,
+      "result": "PASS"
+    },
+    "app_unit": {
+      "passed": 20,
+      "result": "PASS"
+    },
+    "integration": {
+      "passed": 20,
+      "result": "PASS"
+    },
+    "playbooks_linted": {
+      "passed": 9,
+      "result": "PASS"
+    },
+    "publish_script_test": "PASS against a local EMPTY bare Git remote; verified main branch, README, docs/index.html, web/package.json tracked, no secret/runtime files"
+  },
+  "previous_release_v12_smoke_receipts": "Contained under release/; not rerun as part of this Git preparation",
+  "critical_fixes": [
+    "web/package.json is no longer ignored",
+    "obsolete web/push.sh targeting unrelated repository removed",
+    "new publish-to-github.sh refuses nonempty remote",
+    "private runtime files ignored",
+    "GitHub Pages docs/ standalone preview included"
+  ],
+  "risk_notice": "GitHub Pages is a static synthetic demo; live backend requires separate deployment; research LoRA experiment remains NO-GO"
+}

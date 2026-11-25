@@ -1,0 +1,3 @@
+configuration,model,tasks,resolved,mean_agent_seconds,mean_generated_tokens,patch_submitted_share,generated_tokens_per_agent_second
+"12B, 5-minute cap",12B,8,1,253.04,16215.38,0.38,64.1
+"31B, Budget-Fit as published",31B,8,3,143.84,5019.38,1.0,34.9

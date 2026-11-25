@@ -1,0 +1,53 @@
+[
+  {
+    "configuration": "Reduced-thinking budget-fit",
+    "output_file": "submission.zip",
+    "archive_sha256": "e5e50b7d959fe73843ff76ad9e3fe51dd451f04a5dd51745e6171af30d37dfe7",
+    "license": "Apache-2.0",
+    "local_quality_measured": false,
+    "local_latency_measured": false,
+    "time_cap_minutes": 8,
+    "tool_call_cap": 28,
+    "turn_cap": 80,
+    "command_timeout_seconds": 240,
+    "thinking_tokens": 2048,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "max_output_tokens": 8192,
+    "include_thoughts": true
+  },
+  {
+    "configuration": "Budget-Fit single agent",
+    "output_file": "budget_fit_reference.zip",
+    "archive_sha256": "eb3d5ebf21ce39b186d42937de593e3be62bc329024d59e8693e6c5ce1b20c63",
+    "license": "Apache-2.0",
+    "local_quality_measured": false,
+    "local_latency_measured": false,
+    "time_cap_minutes": 8,
+    "tool_call_cap": 28,
+    "turn_cap": 80,
+    "command_timeout_seconds": 240,
+    "thinking_tokens": 4096,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "max_output_tokens": 8192,
+    "include_thoughts": true
+  },
+  {
+    "configuration": "Issue-contract prompt variant",
+    "output_file": "issue_contract_prompt_variant.zip",
+    "archive_sha256": "1ad3e3d5537ba273af519898a627d16d280520dc5e00635cfb2c71492847cc0b",
+    "license": "Apache-2.0",
+    "local_quality_measured": false,
+    "local_latency_measured": false,
+    "time_cap_minutes": 8,
+    "tool_call_cap": 28,
+    "turn_cap": 80,
+    "command_timeout_seconds": 240,
+    "thinking_tokens": 4096,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "max_output_tokens": 8192,
+    "include_thoughts": true
+  }
+]

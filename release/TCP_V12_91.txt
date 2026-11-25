@@ -1,0 +1,5 @@
+...................{"ts": 1795449948372, "level": "info", "rid": "96516fc7b18643bc9fea523ec2238837", "method": "GET", "path": "/v1/HEALTH", "status": 404, "ms": 0.2}
+...........................{"ts": 1795449948407, "level": "info", "rid": "d8e1525688e346b3bbac6dceb5be714a", "method": "POST", "path": "/v1/auth/signup", "status": 400, "ms": 0.4}
+.......................... [ 79%]
+...................                                                      [100%]
+91 passed in 0.73s

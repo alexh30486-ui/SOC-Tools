@@ -1,0 +1,36 @@
+{
+  "license": "Apache-2.0",
+  "source_url": "https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943",
+  "source_archive_sha256": "6ff73d104725cc31deadd18787f3f55e5ce534889cec82387e3b280637d34887",
+  "reference_archive_sha256": "1cb73986bd9ad1682896d56516cfd3df7f4d5729c7ecfe7afda109c175dbbb94",
+  "best_public_score": 0.22,
+  "observed_date": "2026-10-14",
+  "member_changes_against_budget_fit": [
+    "prompts/system.md"
+  ],
+  "members": {
+    "agent.yaml": {
+      "dataset_file": "budget_aware_agent.yaml",
+      "sha256": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4"
+    },
+    "configs/sampling.yaml": {
+      "dataset_file": "budget_aware_sampling.yaml",
+      "sha256": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926"
+    },
+    "eval_config.yaml": {
+      "dataset_file": "budget_aware_limits.yaml",
+      "sha256": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531"
+    },
+    "prompts/system.md": {
+      "dataset_file": "budget_aware_system.md",
+      "sha256": "7f8dde62578a247ffbfc1a519b712ae65849fcfae1ee70c49e0628cab74cbef6"
+    }
+  },
+  "reference_member_sha256": {
+    "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+    "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+    "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+    "prompts/system.md": "475cc9b7fcc0dc295532f5cb5e1928f26a491f501837ad08b1c79bdbe1a3eaa4"
+  },
+  "interpretation": "Unchanged released member bytes; reproducible ZIP container. Public score is the author result, not a score measured by this notebook."
+}

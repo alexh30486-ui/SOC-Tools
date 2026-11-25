@@ -1,0 +1,3 @@
+{"trajectory_id":"sample-001","split":"train","prompt":[{"role":"user","content":"Fix a failing test"}],"completion":[{"role":"assistant","content":"Inspect the failing test and reproduce it."}]}
+{"trajectory_id":"sample-001","split":"train","prompt":[{"role":"assistant","content":"Need code context"}],"completion":[{"role":"assistant","tool_calls":[{"function":{"name":"read_file"}}]}]}
+{"trajectory_id":"sample-002","split":"validation","prompt":[{"role":"user","content":"Investigate an API regression"}],"completion":[{"role":"assistant","content":"Check the diff and existing test."}]}

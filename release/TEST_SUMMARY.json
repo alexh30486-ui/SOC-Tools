@@ -1,0 +1,50 @@
+{
+  "product": "Spectacle SOC",
+  "version": "11.0.0",
+  "release_status": "packaged_local_acceptance_passed",
+  "test_results": {
+    "frontend_chromium": {
+      "passed": 20,
+      "total": 20,
+      "independent_browser_checks": true,
+      "file": "release/FRONTEND_SMOKE_20.json"
+    },
+    "network_backend": {
+      "passed": 40,
+      "total": 40,
+      "file": "release/BACKEND_SMOKE_40.txt"
+    },
+    "http_tcp_socket_scenarios": {
+      "passed": 90,
+      "total": 90,
+      "extra_plan_assertion": 1,
+      "pytest_passed": 91,
+      "file": "release/TCP_SOCKET_90.txt"
+    },
+    "full_python_regression": {
+      "passed": 197,
+      "subtests_passed": 5,
+      "file": "release/FULL_REGRESSION.txt",
+      "note": "Suites overlap; counts must not be summed"
+    }
+  },
+  "research_source_integrity": {
+    "verified": 30,
+    "total_manifest": 85,
+    "missing": 55,
+    "hash_mismatches": []
+  },
+  "production_gates": {
+    "live_supabase_and_redis_tested": false,
+    "gemma_weights_present": false,
+    "trained_lora_present": false,
+    "lora_historical_promotion_decision": "NO-GO",
+    "live_websocket": false,
+    "udp_supported_via_allowlisted_backend": true
+  },
+  "notes": [
+    "Some backend tests use actual loopback TCP/UDP sockets; offline browser test data is simulated.",
+    "No real network probes are performed without explicit server enablement and an allowlist.",
+    "See release/RONNIE_BACKLOG.md for unresolved production issues."
+  ]
+}

@@ -1,0 +1,3 @@
+# Production only. The stdlib server and tests need nothing installed.
+psycopg[binary]>=3.2,<4
+redis>=5,<7  # optional at runtime; required when SOC_QUEUE=redis

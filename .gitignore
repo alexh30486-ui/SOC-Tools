@@ -1,0 +1,62 @@
+# Local credentials and runtime data — NEVER commit
+.env
+.env.*
+!.env.example
+**/.secret
+**/*secret*.local
+**/*credentials*.local
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python runtime and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage/
+htmlcov/
+
+# Database and private investigation artifacts
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db-journal
+*.db-shm
+*.db-wal
+logs/
+.tmp/
+tmp/
+local-data/
+exports/
+
+# Frontend dependencies / caches
+**/node_modules/
+**/.cache/
+**/dist/
+**/.vite/
+**/.next/
+web/baseline.html
+
+# Temporary browser outputs
+playwright-report/
+test-results/
+tests/e2e/shots/
+tests/e2e/smoke-results.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Ignore nested git metadata if generated accidentally
+**/.git/

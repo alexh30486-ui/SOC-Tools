@@ -1,0 +1,89 @@
+{
+  "suite": "frontend_browser_v11",
+  "expected": 20,
+  "passed": 20,
+  "failed": 0,
+  "mode": "Chromium with bundled offline preview, synthetic logs (not live network)",
+  "checks": [
+    {
+      "name": "App root rendered",
+      "status": "PASS"
+    },
+    {
+      "name": "Dashboard heading visible",
+      "status": "PASS"
+    },
+    {
+      "name": "Accessible navigation present",
+      "status": "PASS"
+    },
+    {
+      "name": "Navigation opens network terminal",
+      "status": "PASS"
+    },
+    {
+      "name": "Default mode clearly synthetic",
+      "status": "PASS"
+    },
+    {
+      "name": "ICMP, TCP, UDP distinctions visible",
+      "status": "PASS"
+    },
+    {
+      "name": "Four command presets visible",
+      "status": "PASS"
+    },
+    {
+      "name": "UDP demo reports inconclusive",
+      "status": "PASS"
+    },
+    {
+      "name": "UDP conclusion remains unverified",
+      "status": "PASS"
+    },
+    {
+      "name": "ICMP demo records synthetic reply",
+      "status": "PASS"
+    },
+    {
+      "name": "Claim checker supports matching simulated reply",
+      "status": "PASS"
+    },
+    {
+      "name": "Claim checker refuses compromise inference",
+      "status": "PASS"
+    },
+    {
+      "name": "Arbitrary shell commands blocked in demo",
+      "status": "PASS"
+    },
+    {
+      "name": "Live capability disabled without backend",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated live probes refused",
+      "status": "PASS"
+    },
+    {
+      "name": "Evidence JSON exports through browser",
+      "status": "PASS"
+    },
+    {
+      "name": "Playbook section reachable",
+      "status": "PASS"
+    },
+    {
+      "name": "Gemma/LoRA Settings section reachable",
+      "status": "PASS"
+    },
+    {
+      "name": "Settings shows NO-GO adaptation evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Mobile drawer navigates with no overflow or runtime errors",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "author": "verracodeguacas",
+    "url": "https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent",
+    "licence": "Apache-2.0",
+    "contribution": "Budget-fit single-agent configuration, sampling and time limits; prompt ancestor."
+  },
+  {
+    "author": "Matterhorn3838",
+    "url": "https://www.kaggle.com/code/matterhorn3838/gemma-4-superagent",
+    "licence": "Apache-2.0",
+    "contribution": "Issue specification and sibling-pattern prompt ancestor credited by the budget-aware source."
+  },
+  {
+    "author": "Igor Zharov (flexonafft)",
+    "url": "https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943",
+    "licence": "Apache-2.0",
+    "contribution": "Unchanged budget-aware prompt: bounded navigation, small caller/test views and guarded edit recovery."
+  },
+  {
+    "author": "Google and Kaggle competition organizers",
+    "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+    "licence": "Apache-2.0",
+    "contribution": "Official starter antecedent credited by the public source; harness and evaluation contract."
+  }
+]

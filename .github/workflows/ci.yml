@@ -1,0 +1,55 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: API unit tests (includes cross-app kind isolation)
+        run: cd api && python3 -m unittest discover -s tests -v
+      - name: Playbook lint pull-request simulation
+        run: python3 -m unittest discover -s tests -v
+      - name: Shell syntax of tools
+        run: sh -n tools/protect_main.sh && sh -n run.sh
+
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright and Chromium
+        run: |
+          python3 -m pip install playwright==1.49.0
+          python3 -m playwright install --with-deps chromium
+      - name: Smoke test (starts the API itself, drives the app in Chromium)
+        run: python3 tests/e2e/smoke_test.py
+      - name: Hunt, Sigma shapes, password spray, 20,000-event timing
+        run: python3 tests/e2e/hunt_test.py
+      - name: Command center, mobile, backup and restore
+        run: python3 tests/e2e/command_center_test.py
+      - name: Investigation timeline, event trail and incident exports
+        run: python3 tests/e2e/timeline_test.py
+      - name: Keep screenshots and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-output
+          path: |
+            tests/e2e/shots
+            tests/e2e/smoke-results.json
+          if-no-files-found: ignore

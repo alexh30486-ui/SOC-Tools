@@ -1,0 +1,32 @@
+{
+  "version": "v12",
+  "component": "Linux Essentials boot-loaded command library and defensive triage guidance",
+  "checks": {
+    "existing_frontend": {
+      "passed": 20,
+      "expected": 20
+    },
+    "new_linux_ui": {
+      "passed": 27,
+      "expected": 27
+    },
+    "backend_network": {
+      "passed": 40,
+      "expected": 40
+    },
+    "tcp_release": {
+      "passed": 91,
+      "expected": 91,
+      "note": "90 TCP scenarios + 1 test-plan count assertion"
+    },
+    "targeted_regression": {
+      "passed": 66,
+      "subtests_passed": 5
+    }
+  },
+  "limits": [
+    "Linux commands are displayed/previewed with synthetic output only. No arbitrary shell.",
+    "Real network checks originate from backend and need authentication + allowlists.",
+    "No Gemma inference or privileged command execution."
+  ]
+}

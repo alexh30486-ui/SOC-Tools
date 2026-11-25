@@ -1,0 +1,39 @@
+# Optional SOC queue runtime. Needs SOC_SUPABASE_* in your environment for cloud mode.
+# For true multi-worker deployment use SOC_STORAGE=supabase, not shared SQLite.
+services:
+  redis:
+    image: redis:7.4-alpine
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory", "256mb", "--maxmemory-policy", "noeviction"]
+    volumes: ["redisdata:/data"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  soc-api:
+    build:
+      context: ..
+      dockerfile: api/Dockerfile
+    depends_on:
+      redis: {condition: service_healthy}
+    environment: &socenv
+      SPEC_SECRET: ${SPEC_SECRET:?SPEC_SECRET is required}
+      SPEC_DATABASE_URL: ${SPEC_DATABASE_URL:?SPEC_DATABASE_URL is required}
+      SOC_STORAGE: ${SOC_STORAGE:-supabase}
+      SOC_QUEUE: redis
+      SOC_REDIS_URL: redis://redis:6379/0
+      SOC_SUPABASE_URL: ${SOC_SUPABASE_URL:?set SOC_SUPABASE_URL}
+      SOC_SUPABASE_PUBLISHABLE_KEY: ${SOC_SUPABASE_PUBLISHABLE_KEY:?set SOC_SUPABASE_PUBLISHABLE_KEY}
+      SOC_SUPABASE_SECRET_KEY: ${SOC_SUPABASE_SECRET_KEY:?set SOC_SUPABASE_SECRET_KEY}
+    ports: ["8080:8080"]
+  soc-worker:
+    build:
+      context: ..
+      dockerfile: api/Dockerfile
+    command: ["python", "-m", "spec_api.soc_worker"]
+    depends_on:
+      redis: {condition: service_healthy}
+    environment: *socenv
+    restart: unless-stopped
+volumes:
+  redisdata:

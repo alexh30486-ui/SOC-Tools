@@ -1,0 +1,116 @@
+{
+  "suite": "linux_essentials_v12",
+  "passed": 27,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Linux command library exists",
+      "status": "PASS"
+    },
+    {
+      "name": "Boot log contains 25 loaded",
+      "status": "PASS"
+    },
+    {
+      "name": "All 25 names in boot transcript",
+      "status": "PASS"
+    },
+    {
+      "name": "All 25 command cards",
+      "status": "PASS"
+    },
+    {
+      "name": "No auto-execution on boot",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicit synthetic mode",
+      "status": "PASS"
+    },
+    {
+      "name": "AI triage transparently rule based",
+      "status": "PASS"
+    },
+    {
+      "name": "By default show a network scenario",
+      "status": "PASS"
+    },
+    {
+      "name": "Identity scenario provides log + sockets",
+      "status": "PASS"
+    },
+    {
+      "name": "Vulnerability scenario avoids exploiting claims",
+      "status": "PASS"
+    },
+    {
+      "name": "Search narrows commands",
+      "status": "PASS"
+    },
+    {
+      "name": "Storage category filters",
+      "status": "PASS"
+    },
+    {
+      "name": "Stage read-only command",
+      "status": "PASS"
+    },
+    {
+      "name": "Synthetic df sample",
+      "status": "PASS"
+    },
+    {
+      "name": "No real host claim for demo",
+      "status": "PASS"
+    },
+    {
+      "name": "Useradd marked reference only",
+      "status": "PASS"
+    },
+    {
+      "name": "Account creation blocked",
+      "status": "PASS"
+    },
+    {
+      "name": "Packet sniffing blocked",
+      "status": "PASS"
+    },
+    {
+      "name": "Shell chaining rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Catalog collapses",
+      "status": "PASS"
+    },
+    {
+      "name": "Catalog expands",
+      "status": "PASS"
+    },
+    {
+      "name": "UDP silence remains inconclusive",
+      "status": "PASS"
+    },
+    {
+      "name": "Desktop has no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "No desktop JavaScript errors",
+      "status": "PASS"
+    },
+    {
+      "name": "Mobile command catalog is accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "Mobile has no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "No mobile JavaScript errors",
+      "status": "PASS"
+    }
+  ],
+  "evidence": "Chromium offline demo only; no live Linux command execution or LoRA inference."
+}

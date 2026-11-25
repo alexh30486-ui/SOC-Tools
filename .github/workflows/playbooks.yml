@@ -1,0 +1,23 @@
+name: playbooks
+# No "paths" filter on purpose: a required status check that never runs leaves a pull request
+# waiting forever. The lint is fast, and it passes when no playbook changed.
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Lint playbooks
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            python3 tools/playbook_lint.py --base "origin/${{ github.base_ref }}"
+          else
+            python3 tools/playbook_lint.py
+          fi

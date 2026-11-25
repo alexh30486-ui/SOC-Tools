@@ -1,0 +1,32 @@
+# Local production-like stack: PostgreSQL + API. Not run in the build sandbox (no Docker there).
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: spec
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+      POSTGRES_DB: spec
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U spec -d spec"]
+      interval: 5s
+      retries: 10
+  api:
+    build:
+      context: ..
+      dockerfile: api/Dockerfile
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      SPEC_DATABASE_URL: postgresql://spec:${POSTGRES_PASSWORD}@db:5432/spec
+      SPEC_SECRET: ${SPEC_SECRET:?set SPEC_SECRET (32+ chars)}
+      SPEC_CORS_ORIGINS: ${SPEC_CORS_ORIGINS:-}
+      SPEC_AUTH_RATE_PER_MIN: "10"
+      SPEC_API_RATE_PER_MIN: "300"
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+volumes:
+  pgdata:

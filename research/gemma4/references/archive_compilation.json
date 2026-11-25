@@ -1,0 +1,32 @@
+{
+  "compile": "PASS",
+  "archive": "PASS",
+  "cpu_only": true,
+  "inference_run": false,
+  "root_tools": 9,
+  "generate_content_config": {
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "max_output_tokens": 8192,
+    "thinking_config": {
+      "include_thoughts": true,
+      "thinking_budget": 2048
+    }
+  },
+  "packages": {
+    "adk-submission": "0.2.13",
+    "swegemma": "0.2.11",
+    "adk-eval-core": "0.1.0",
+    "google-adk": "1.36.1"
+  },
+  "wheel_sha256": {
+    "adk_eval_core-0.1.0-py3-none-any.whl": "e614e1b2fe8d886a634871e4c57f9887e1cc66e8c27300f8503a43c6e3ca82f3",
+    "adk_submission-0.2.13-py3-none-any.whl": "f156f0bd84580ccb9334726d114d7a5481f16d3a6e2887cc4d276ced0ef8d99d",
+    "swegemma-0.2.11-py3-none-any.whl": "9ad876581f3acde8ec3c369858f0834e2b9f41a3cffce3ca42f09cb090aea9d3"
+  },
+  "official_source": "https://www.kaggle.com/datasets/metric/gemma-4-developer-agent-wheelhouse",
+  "checked_utc": "2026-10-13T07:57:00.185488+00:00",
+  "archive_sha256": "e5e50b7d959fe73843ff76ad9e3fe51dd451f04a5dd51745e6171af30d37dfe7",
+  "limitation": "Structural compilation only. No local repair quality or latency measurement; no proof of hidden scorer parity.",
+  "snapshot_note": "October 13, 2026 structural compilation of the reduced-thinking archive; wheel hashes are those used in the recorded compilation."
+}

@@ -1,0 +1,8 @@
+Budget-aware coding agent
+Original public source: Igor Zharov (flexonafft)
+Budget-fit configuration: verracodeguacas
+Prompt antecedent: Matterhorn3838
+Official starter: Google / Kaggle competition organizers
+All four released bundle members are unchanged. Only the ZIP container is rebuilt.
+Apache License 2.0 applies to the bundle. Full licence is provided alongside it.
+Full source links and contributions: budget_aware_credits.json

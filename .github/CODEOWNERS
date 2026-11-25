@@ -1,0 +1,3 @@
+# Repository owner. Do not turn on mandatory pull-request reviews for a solo repository.
+# Use branch protection/status checks after the first successful push.
+* @alexh30486-ui

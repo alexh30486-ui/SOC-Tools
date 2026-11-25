@@ -1,0 +1,266 @@
+{
+  "unchanged_lora_payloads": [
+    "lora_native_resolved.jsonl",
+    "lora_native_unresolved.jsonl",
+    "lora_external_A.jsonl",
+    "lora_external_B.part000.jsonl",
+    "lora_external_B.part001.jsonl",
+    "lora_external_B.part002.jsonl",
+    "lora_external_B.part003.jsonl",
+    "lora_external_B2.part000.jsonl",
+    "lora_external_B2.part001.jsonl",
+    "lora_external_B2.part002.jsonl",
+    "lora_external_B2.part003.jsonl"
+  ],
+  "tokenizer_validation": {
+    "status": "SMOKE_PASS",
+    "limit_per_file": 1,
+    "cpu_only": true,
+    "processes": 1,
+    "statistics": {
+      "external_tierA": {
+        "trajectories": 1,
+        "jsonl_bytes": 1570192,
+        "le16384": 0,
+        "turns": 29,
+        "supervised_tokens": 4367
+      },
+      "external_tierB": {
+        "trajectories": 4,
+        "jsonl_bytes": 9113163,
+        "le16384": 0,
+        "turns": 133,
+        "supervised_tokens": 21670
+      },
+      "external_tierB2": {
+        "trajectories": 4,
+        "jsonl_bytes": 9447252,
+        "le16384": 0,
+        "turns": 139,
+        "supervised_tokens": 25501
+      },
+      "native_resolved": {
+        "trajectories": 1,
+        "jsonl_bytes": 1233283,
+        "text_id_roundtrip_mismatches": 1,
+        "canonical_target_mismatches": 2,
+        "redacted_turns": 4,
+        "le16384": 1,
+        "turns": 15,
+        "supervised_tokens": 2913
+      },
+      "native_unresolved": {
+        "trajectories": 1,
+        "jsonl_bytes": 2279692,
+        "text_id_roundtrip_mismatches": 0,
+        "canonical_target_mismatches": 1,
+        "redacted_turns": 2,
+        "le16384": 0,
+        "turns": 15,
+        "supervised_tokens": 7090
+      }
+    },
+    "files": 11,
+    "cuda_initialized": false,
+    "validated_files": [
+      {
+        "file": "lora_external_A.jsonl",
+        "bytes": 18568972,
+        "sha256": "e83ea7b160f7633c641414e237b2f909541e4582224a72826db006561454df42"
+      },
+      {
+        "file": "lora_external_B.part000.jsonl",
+        "bytes": 478409010,
+        "sha256": "5cf26c39e430a272ead15a785f3366984284f57e2858ac82b1410f64d52f3094"
+      },
+      {
+        "file": "lora_external_B.part001.jsonl",
+        "bytes": 478682835,
+        "sha256": "8970ca7ed7bf247409fb2fe747300ffdb78f70f3eb01001a045a219d89c6441d"
+      },
+      {
+        "file": "lora_external_B.part002.jsonl",
+        "bytes": 479201729,
+        "sha256": "8682c95eca1ba7923ed91d7fcb3c3729c237fe6651359d7f18745602d65e8d45"
+      },
+      {
+        "file": "lora_external_B.part003.jsonl",
+        "bytes": 147332852,
+        "sha256": "af8e2b19754e40beaa29fbbff52fb2d12a293ab4631e04f162e103907aae509f"
+      },
+      {
+        "file": "lora_external_B2.part000.jsonl",
+        "bytes": 478600337,
+        "sha256": "83afc1910e654287cd3771c8d2244dc2239d146eab0ba13408b01d9e50f11abe"
+      },
+      {
+        "file": "lora_external_B2.part001.jsonl",
+        "bytes": 478506347,
+        "sha256": "f459a03b987bb61883bd5094e4ac9e02af953ace91dc7db2cd8fd844901484cc"
+      },
+      {
+        "file": "lora_external_B2.part002.jsonl",
+        "bytes": 478640585,
+        "sha256": "374707b574e45475988cf76773df20c1910aba1874f1277bfb7494186be7cf95"
+      },
+      {
+        "file": "lora_external_B2.part003.jsonl",
+        "bytes": 407910621,
+        "sha256": "f67a137154f0afa86b54d9a792a95fe756c48b68207a37c1aa07eaaa7fa1cbdd"
+      },
+      {
+        "file": "lora_native_resolved.jsonl",
+        "bytes": 207568178,
+        "sha256": "2479861828b21bca339590f4c872b0ff60c1948095da42057486d4e7523ab7ae"
+      },
+      {
+        "file": "lora_native_unresolved.jsonl",
+        "bytes": 156864572,
+        "sha256": "7a1ba410041d2ef5e29c31edc7c075eea08607888c59949ce8748adbd23a36bf"
+      }
+    ],
+    "privacy_scan": {
+      "lora_external_A.jsonl": {
+        "matches_replaced": {
+          "private_key": 0,
+          "provider_token": 0,
+          "bearer_token": 0,
+          "secret_assignment": 0,
+          "cluster_path": 0
+        },
+        "records_changed_by_kind": {},
+        "method": "Regex corpus scan; values never logged. Counts refer to original supplied strings, before derived renderings/IDs. Not proof of absence of every possible secret or personal name."
+      },
+      "lora_external_B.part000.jsonl": {
+        "matches_replaced": {
+          "private_key": 0,
+          "provider_token": 0,
+          "bearer_token": 0,
+          "secret_assignment": 0,
+          "cluster_path": 0
+        },
+        "records_changed_by_kind": {},
+        "method": "Regex corpus scan; values never logged. Counts refer to original supplied strings, before derived renderings/IDs. Not proof of absence of every possible secret or personal name."
+      },
+      "lora_external_B.part001.jsonl": {
+        "matches_replaced": {
+          "private_key": 0,
+          "provider_token": 0,
+          "bearer_token": 0,
+          "secret_assignment": 0,
+          "cluster_path": 0
+        },
+        "records_changed_by_kind": {},
+        "method": "Regex corpus scan; values never logged. Counts refer to original supplied strings, before derived renderings/IDs. Not proof of absence of every possible secret or personal name."
+      },
+      "lora_external_B.part002.jsonl": {
+        "matches_replaced": {
+          "private_key": 0,
+          "provider_token": 0,
+          "bearer_token": 0,
+          "secret_assignment": 0,
+          "cluster_path": 0
+        },
+        "records_changed_by_kind": {},
+        "method": "Regex corpus scan; values never logged. Counts refer to original supplied strings, before derived renderings/IDs. Not proof of absence of every possible secret or personal name."
+      },
+      "lora_external_B.part003.jsonl": {
+        "matches_replaced": {
+          "private_key": 0,
+          "provider_token": 0,
+          "bearer_token": 0,
+          "secret_assignment": 0,
+          "cluster_path": 0
+        },
+        "records_changed_by_kind": {},
+        "method": "Regex corpus scan; values never logged. Counts refer to original supplied strings, before derived renderings/IDs. Not proof of absence of every possible secret or personal name."
+      },
+      "lora_external_B2.part000.jsonl": {
+        "matches_replaced": {
+          "private_key": 0,
+          "provider_token": 0,
+          "bearer_token": 0,
+          "secret_assignment": 0,
+          "cluster_path": 0
+        },
+        "records_changed_by_kind": {},
+        "method": "Regex corpus scan; values never logged. Counts refer to original supplied strings, before derived renderings/IDs. Not proof of absence of every possible secret or personal name."
+      },
+      "lora_external_B2.part001.jsonl": {
+        "matches_replaced": {
+          "private_key": 0,
+          "provider_token": 0,
+          "bearer_token": 0,
+          "secret_assignment": 0,
+          "cluster_path": 0
+        },
+        "records_changed_by_kind": {},
+        "method": "Regex corpus scan; values never logged. Counts refer to original supplied strings, before derived renderings/IDs. Not proof of absence of every possible secret or personal name."
+      },
+      "lora_external_B2.part002.jsonl": {
+        "matches_replaced": {
+          "private_key": 0,
+          "provider_token": 0,
+          "bearer_token": 0,
+          "secret_assignment": 0,
+          "cluster_path": 0
+        },
+        "records_changed_by_kind": {},
+        "method": "Regex corpus scan; values never logged. Counts refer to original supplied strings, before derived renderings/IDs. Not proof of absence of every possible secret or personal name."
+      },
+      "lora_external_B2.part003.jsonl": {
+        "matches_replaced": {
+          "private_key": 0,
+          "provider_token": 0,
+          "bearer_token": 0,
+          "secret_assignment": 0,
+          "cluster_path": 0
+        },
+        "records_changed_by_kind": {},
+        "method": "Regex corpus scan; values never logged. Counts refer to original supplied strings, before derived renderings/IDs. Not proof of absence of every possible secret or personal name."
+      },
+      "lora_native_resolved.jsonl": {
+        "matches_replaced": {
+          "private_key": 0,
+          "provider_token": 0,
+          "bearer_token": 0,
+          "secret_assignment": 0,
+          "cluster_path": 0
+        },
+        "records_changed_by_kind": {},
+        "method": "Regex corpus scan; values never logged. Counts refer to original supplied strings, before derived renderings/IDs. Not proof of absence of every possible secret or personal name."
+      },
+      "lora_native_unresolved.jsonl": {
+        "matches_replaced": {
+          "private_key": 0,
+          "provider_token": 0,
+          "bearer_token": 0,
+          "secret_assignment": 0,
+          "cluster_path": 0
+        },
+        "records_changed_by_kind": {},
+        "method": "Regex corpus scan; values never logged. Counts refer to original supplied strings, before derived renderings/IDs. Not proof of absence of every possible secret or personal name."
+      }
+    },
+    "scope": "Saved native prefixes/IDs, decoded targets, canonical response reconstruction and text-ID round trips; external renderer strings, token boundaries and whole-episode limits; published index, sizes, regex privacy scan and cross-file ranks/action dedup. Original-source conversion, teacher identity and overlap audits are historical, not repeated."
+  },
+  "archive_checker_pass": true,
+  "local_gpu_initialized": false,
+  "limits": "Tokenizer/renderer checks sampled one trajectory per each of 11 unchanged historical files. All 11 full payload hashes were verified; a full retokenization of unchanged data was not repeated.",
+  "expected_code_literals": {
+    "lora_sanitize.py": "One generic /home/scientists/ regex prefix in the published detector source. It contains no username, hostname or actual filesystem value. Source left unchanged."
+  },
+  "syntax_checks": {
+    "status": "PASS",
+    "python_files": 16
+  },
+  "index_checks": {
+    "historical_lora_rows": 1726,
+    "small_model_rows": 342,
+    "onpolicy_rows": 250,
+    "validation_task_rows": 165,
+    "status": "PASS"
+  },
+  "privacy_scan_pass": true,
+  "privacy_scan_scope": "All staged text files and adapter archive metadata; values never logged. Pattern scan is not proof against all possible secrets."
+}

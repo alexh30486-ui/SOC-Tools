@@ -1,0 +1,150 @@
+{
+  "publication_date": "2026-10-13",
+  "sources": [
+    {
+      "file": "gate_measurements.csv",
+      "source_file": "gate_measurements.csv",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit?datasetVersionNumber=7",
+      "source_file_sha256": "9f5666212b6e1bfa102795c431a5a28f2720d433ac8ee787934003e025706063",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "gate_result.json",
+      "source_file": "gate_result.json",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit?datasetVersionNumber=7",
+      "source_file_sha256": "357fa4efc32bb037c963c82b1f9f108f8f55edf6d839b19d8c7c7864b0f55891",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "probe_top20.json",
+      "source_file": "probe_top20.json",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit?datasetVersionNumber=7",
+      "source_file_sha256": "a6c59a49801b4a11614848b13702b8c4cd978abfc568cf97eb5b593152346047",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "served_prompt_checks.csv",
+      "source_file": "served_prompt_checks.csv",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit?datasetVersionNumber=7",
+      "source_file_sha256": "e17867b2ea80b0e8e72d0bf3a079fd55bb114902abf3ed83db82ed1265c32193",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "example_adapter_tensor_audit.csv",
+      "source_file": "example_adapter_tensor_audit.csv",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit?datasetVersionNumber=7",
+      "source_file_sha256": "5b1bed4380a58be0dc5965f49b0d7050cc9a0361a862291253c302d84d76b47b",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "official_wheel_hashes.csv",
+      "source_file": "official_wheel_hashes.csv",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit?datasetVersionNumber=7",
+      "source_file_sha256": "c58ede16a7aeb4b124b100c16cb08a1f09ef202e847c7553d5508e263613f861",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "requirements-frozen.txt",
+      "source_file": "requirements-frozen.txt",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit?datasetVersionNumber=7",
+      "source_file_sha256": "6d55dba13b52c6212234394366ce35a2d904f6917988085607e9268623a3202e",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "make_synthetic_adapter.py",
+      "source_file": "make_synthetic_adapter.py",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit?datasetVersionNumber=7",
+      "source_file_sha256": "6fd55b9bf366887f45519776f349dbfaa1bec60fa585dc4dac1e3bf34925cb70",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "serve_official.py",
+      "source_file": "serve_official.py",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit?datasetVersionNumber=7",
+      "source_file_sha256": "7fa7ba4f242a1dfcef0c44a67bb65dc297d5d5acd1ce9d0e04c6aa98c78157d1",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "probe_adapter_effect.py",
+      "source_file": "probe_adapter_effect.py",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit?datasetVersionNumber=7",
+      "source_file_sha256": "b143d4fb21d9cc9031b228ecf52d33d98c5c5c257fa8ca0f95a7e26a48d3b586",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "served_render_reference.py",
+      "source_file": "served_render_reference.py",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit?datasetVersionNumber=7",
+      "source_file_sha256": "eae83488264a0987f77c6a8831585faced0dd6d3714a68dcf0871f5813569042",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "adaptation_loss_changes.csv",
+      "source_file": "lora_debug_nll.csv",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-task-soundness-and-local-results?datasetVersionNumber=8",
+      "source_file_sha256": "3728523b3eb06241bce85b41dd04a55297f42fbcbab36eaee8e581ae6b5eda6e",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    },
+    {
+      "file": "adaptation_evaluation.json",
+      "source_file": "lora_debug_verdict.json",
+      "source_dataset": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-task-soundness-and-local-results?datasetVersionNumber=8",
+      "source_file_sha256": "5b4620fea4c17eeac9f3ea4ece6259d97c9ccb152cd4add26c69b12ad2eb0a04",
+      "transformation": "Publication labels and selected fields; measurements preserved."
+    }
+  ],
+  "scope": "Sanitized measurements and aggregate diagnostics only. No trajectories or training data.",
+  "measurement_change": "No new inference or grading. Added completed public observations, a cited public sampling screen, deterministic runtime projections, public score/licence catalogue and CPU-only archive compilation.",
+  "refresh_date": "2026-10-13",
+  "previous_public_dataset": {
+    "url": "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit",
+    "version": 8,
+    "manifest_sha256": "ccbbcf209b108e8659f8c05f3f754d339052a791d6eccd5f7263d05b16e5f20c"
+  },
+  "added_sources": [
+    "https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent",
+    "https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2",
+    "https://www.kaggle.com/code/honghanhhh/gemma-4-baseline-lb-0-24",
+    "https://www.kaggle.com/code/samvalladares/gemma-4-agent-budget-fit-single-agent",
+    "https://www.kaggle.com/code/lavinwins/gemma-4-autonomous-developer-agent-calibrated-sin",
+    "https://www.kaggle.com/code/nilanjansaha123/gemma-4-dev-agent-contract-first-1-agent-bundle",
+    "https://www.kaggle.com/code/dmitriigluzdov/gemma-4-task-soundness-serving-and-evaluation",
+    "https://www.kaggle.com/code/nihilisticneuralnet/gemma-4-developer-agent-direct-code-verifier",
+    "https://www.kaggle.com/code/matterhorn3838/gemma-4-superagent",
+    "https://www.kaggle.com/code/yiyu0716/g4-pack-yiyu-v19-fixed-trace-t7p5",
+    "https://www.kaggle.com/code/matterhorn3838/gemma-gemini-the-ultimate-duo",
+    "https://www.kaggle.com/code/lucifer19/agentic-counterexample-lab",
+    "https://www.kaggle.com/code/leoprovorov/gemma-4-the-complete-guide-expanded-full",
+    "https://www.kaggle.com/code/lucifer19/black-cat-swe-agent-pack-instinct",
+    "https://www.kaggle.com/code/romanrozen/gemma-eda-baseline-for-a-start-lb-top-1",
+    "https://www.kaggle.com/code/mizeroluckygall/pathfinder-gemma-4-agent-eda-baseline",
+    "https://www.kaggle.com/code/msama01/gemma-4-developer-agent-eda",
+    "https://www.kaggle.com/code/hsiaosuan/gemma-developer-agent-0-13-submission",
+    "https://www.kaggle.com/code/nihilisticneuralnet/0-10-gemma-4-developer-agent-submission",
+    "https://www.kaggle.com/code/zhukovoleksiy/gemma-4-walkthrough-first-submission",
+    "https://www.kaggle.com/code/alfira17/the-gemma-4-developer-agent-competition",
+    "https://www.kaggle.com/code/hitarthjain0/gemma-4-agent-what-took-lb-0-12-0-24",
+    "https://www.kaggle.com/code/nursrijan/gemma-4-swe-agent-complete-eda-adk-starter-kit",
+    "https://www.kaggle.com/code/ryanholbrook/getting-started-gemma-4-developer-agent",
+    "https://www.kaggle.com/datasets/metric/gemma-4-developer-agent-wheelhouse"
+  ],
+  "publication_sources": [
+    "https://ai.google.dev/gemma/apache_2",
+    "https://creativecommons.org/licenses/by/4.0/",
+    "https://github.com/vllm-project/vllm",
+    "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "https://huggingface.co/datasets/nebius/SWE-rebench",
+    "https://huggingface.co/datasets/nebius/SWE-rebench-V2",
+    "https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories/tree/35455389ab51bf5e2306bfd436ef72d0f98bf882",
+    "https://huggingface.co/datasets/whitecircle/swe-rebench-v2-clean-python-tasks",
+    "https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct/tree/6cd26aaa2357fb2bad8c51699a7558a4d1a965bb",
+    "https://raw.githubusercontent.com/Gluzdov-Dmitrii/Gemma-4-Developer-Agent/main/kaggle-datasets/gemma-4-serving-and-lora-verification-kit/lora_data_dark.png",
+    "https://raw.githubusercontent.com/Gluzdov-Dmitrii/Gemma-4-Developer-Agent/main/kaggle-datasets/gemma-4-serving-and-lora-verification-kit/overview_dark.png",
+    "https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2",
+    "https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent",
+    "https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/750713",
+    "https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-task-soundness-and-local-results"
+  ],
+  "release_date": "2026-11-07",
+  "additional_measurements": "Original author measurements; public and local results are distinct. No pending localization-skill material included."
+}

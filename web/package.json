@@ -1,0 +1,14 @@
+{
+  "name": "spectacle-soc-ui",
+  "private": true,
+  "version": "3.0.0",
+  "description": "React/TypeScript SOC Command Center with compiled Tailwind CSS and local investigation workflows",
+  "scripts": {
+    "build": "node src/tailwind-build.js && python3 build.py index.html",
+    "dev": "npm run build && python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.10",
+    "typescript": "^5.9.0"
+  }
+}

@@ -1,0 +1,7 @@
+..........................{"ts": 1795397035091, "level": "info", "rid": "8008b4f4786941588e472acd26c0a52d", "method": "GET", "path": "/v1/team", "status": 401, "ms": 0.3}
+............{"ts": 1795397035106, "level": "info", "rid": "a13b26ad655a4bd38b3b01925844dab1", "method": "GET", "path": "/v1/soc/runs", "status": 401, "ms": 0.4}
+..........{"ts": 1795397035120, "level": "info", "rid": "55b6df77e45241469c08815ea86cd949", "method": "POST", "path": "/v1/auth/login", "status": 400, "ms": 0.3}
+....{"ts": 1795397035125, "level": "info", "rid": "eaaf88730d154795823f9e5c33560acc", "method": "POST", "path": "/v1/projects", "status": 400, "ms": 0.3}
+.................... [ 79%]
+...................                                                      [100%]
+91 passed in 0.74s

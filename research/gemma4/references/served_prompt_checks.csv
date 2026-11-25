@@ -1,0 +1,8 @@
+cohort,rendering,check,matched,total
+native,old_history,prompt_token_count,0,803
+native,drop_reasoning_content_only,prompt_token_count,0,803
+native,content_parts_only,prompt_token_count,79,803
+native,served_history,prompt_token_count,803,803
+held_out_rich,served_history,prompt_token_count,133,133
+development_live_probe,served_history,prompt_token_identity,5,5
+native,reconstructed_target,prompt_and_completion_token_count,765,803
