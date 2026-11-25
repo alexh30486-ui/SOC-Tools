@@ -17,9 +17,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: API unit tests (includes cross-app kind isolation)
+      - name: API unit tests
         run: cd api && python3 -m unittest discover -s tests -v
-      - name: Playbook lint pull-request simulation
+      - name: SOC integration tests
+        run: python3 -m unittest discover -s tests/integration -v
+      - name: Project and playbook tests
         run: python3 -m unittest discover -s tests -v
       - name: Shell syntax of tools
         run: sh -n tools/protect_main.sh && sh -n run.sh
@@ -36,20 +38,14 @@ jobs:
         run: |
           python3 -m pip install playwright==1.49.0
           python3 -m playwright install --with-deps chromium
-      - name: Smoke test (starts the API itself, drives the app in Chromium)
-        run: python3 tests/e2e/smoke_test.py
-      - name: Hunt, Sigma shapes, password spray, 20,000-event timing
-        run: python3 tests/e2e/hunt_test.py
-      - name: Command center, mobile, backup and restore
-        run: python3 tests/e2e/command_center_test.py
-      - name: Investigation timeline, event trail and incident exports
-        run: python3 tests/e2e/timeline_test.py
+      - name: Current v12 frontend smoke (20 real interactions, offline vendor runtime)
+        run: python3 tests/e2e/current_v12_smoke.py
       - name: Keep screenshots and results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: e2e-output
+          name: v12-ui-smoke
           path: |
-            tests/e2e/shots
-            tests/e2e/smoke-results.json
+            tests/e2e/shots/ci-v12-*.png
+            tests/e2e/shots/ci-v12-smoke-results.json
           if-no-files-found: ignore
